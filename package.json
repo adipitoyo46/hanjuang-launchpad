@@ -1,0 +1,22 @@
+{
+  "name": "hanjuang-launchpad-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hanjuang Token (HJNG) — Ammora launchpad build untuk agen-3, ditulis dari nol di atas @ammora-protocol/sdk",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "tsx src/check.ts",
+    "config": "tsx src/01-config.ts",
+    "launch": "tsx src/02-launch.ts",
+    "buy": "tsx src/03-firstbuy.ts"
+  },
+  "dependencies": {
+    "@ammora-protocol/sdk": "0.3.9",
+    "viem": "^2.33.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
